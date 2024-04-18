@@ -8,6 +8,6 @@ export default defineConfig({
     outDir: './docs',
     // base: 'minimalist-portfolio-json',
     build: {
-      assets: 'astro'
+      assets: './docs/astro'
     }
   });
