@@ -7,6 +7,7 @@ export default defineConfig({
     output: 'static',
     outDir: './docs',
     // base: 'minimalist-portfolio-json',
+    base: '/docs',
     build: {
       assets: 'astro'
     }
