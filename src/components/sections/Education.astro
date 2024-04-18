@@ -7,47 +7,36 @@ import { education } from "@cv";
 <Section title="Educación">
   <ul>
     {
-      education.map(
-        ({
-          institution,
-          url,
-          area,
-          studyType,
-          startDate,
-          endDate,
-          score,
-          courses,
-        }) => {
-          const startYear = new Date(startDate).getFullYear();
-          const endYear =
-            endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+      education.map(({ institution, area, studyType, startDate, endDate }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate !== null ? new Date(endDate).getFullYear() : "Actual";
 
-          return (
-            <li>
-              <article>
-                <header>
-                  <div>
-                    <h3>{institution}</h3>
-                    <h4>{studyType}</h4>
-                  </div>
-                  <div>
-                    <time datetime={startDate} data-title={startDate}>
-                      {startYear}
-                    </time>
-                    {" - "}
-                    <time datetime={endDate} data-title={endDate}>
-                      {endYear}
-                    </time>
-                  </div>
-                </header>
-                <footer>
-                  <p>{area}</p>
-                </footer>
-              </article>
-            </li>
-          );
-        }
-      )
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>{institution}</h3>
+                  <h4>{studyType}</h4>
+                </div>
+                <div>
+                  <time datetime={startDate} data-title={startDate}>
+                    {startYear}
+                  </time>
+                  {" - "}
+                  <time datetime={endDate} data-title={endDate}>
+                    {endYear}
+                  </time>
+                </div>
+              </header>
+              <footer>
+                <p>{area}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>
@@ -75,10 +64,6 @@ import { education } from "@cv";
     align-items: flex-start;
     margin-bottom: 4px;
   }
-
-  /* header div {
-    flex: 1;
-  } */
 
   time {
     color: #555;

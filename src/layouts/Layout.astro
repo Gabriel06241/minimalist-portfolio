@@ -4,7 +4,7 @@ interface Props {
 }
 
 import { ViewTransitions } from "astro:transitions";
-import Toggle from "@/components/ThemeChange.astro";
+// import Toggle from "@/components/ThemeChange.astro";
 
 import { basics } from "@cv";
 
@@ -83,7 +83,7 @@ const { image, summary, url } = basics;
       }
 
       async function changeLanguage(lang) {
-        await setLanguagePreference(lang);
+        setLanguagePreference(lang);
 
         const langData = await fetchLanguageData(lang);
         console.log(langData);

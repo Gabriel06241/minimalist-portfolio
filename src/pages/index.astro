@@ -1,6 +1,6 @@
 ---
 import KeyboardManager from "@/components/KeyboardManager.astro";
-import Toggle from "@/components/ThemeChange.astro";
+// import Toggle from "@/components/ThemeChange.astro";
 import About from "@/components/sections/About.astro";
 import Education from "@/components/sections/Education.astro";
 import Experience from "@/components/sections/Experience.astro";
@@ -10,10 +10,10 @@ import Skills from "@/components/sections/Skills.astro";
 import Layout from "@/layouts/Layout.astro";
 import { basics } from "@cv";
 
-const { name, label } = basics;
+const { name } = basics;
 ---
 
-<Layout title=`${name} - Curriculum vitae`>
+<Layout title=`Curriculum vitae - ${name}`>
   <main>
     <!-- <Toggle /> -->
     <Hero />
@@ -31,6 +31,12 @@ const { name, label } = basics;
     padding: 4rem;
     margin: auto;
     /* width: 100%; */
+  }
+
+  @media print {
+    main {
+      padding: 3rem;
+    }
   }
 
   @media (width <= 700px) {

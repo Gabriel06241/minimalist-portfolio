@@ -44,7 +44,10 @@
 
 <script>
   // Get the theme toggle input
-  const themeToggle = document.querySelector('.theme-switch input[type="checkbox"]');
+  const themeToggle = document.querySelector(
+    '.theme-switch input[type="checkbox"]'
+  ) as HTMLInputElement;
+  themeToggle.checked = false;
 
   // Get the current theme from local storage
   const currentTheme = localStorage.getItem("theme");
@@ -61,7 +64,7 @@
   }
 
   // Function that will switch the theme based on the if the theme toggle is checked or not
-  function switchTheme(e) {
+  function switchTheme(e: any) {
     if (e.target.checked) {
       document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
