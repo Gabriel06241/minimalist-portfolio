@@ -3,82 +3,239 @@ interface Props {
   title: string;
 }
 
+import { ViewTransitions } from "astro:transitions";
+import Toggle from "@/components/ThemeChange.astro";
+
+import { basics } from "@cv";
+
 const { title } = Astro.props;
+const { image, summary, url } = basics;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
+    <ViewTransitions />
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" as="image" href={image} />
+
+    <meta property="og:url" content={url} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={summary} />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={summary} />
+    <meta name="twitter:image" content="" />
   </head>
   <body>
+    <!-- <nav>
+      <ul>
+        <li id="enLanguage">
+          <a href="/#en" lang="en">Ingles</a>
+        </li>
+        <li id="esLanguage">
+          <a href="/#es" lang="es">Español</a>
+        </li>
+      </ul>
+      <Toggle />
+    </nav> -->
     <slot />
+    <script is:inline>
+      const english = document.getElementById("enLanguage");
+      const spanish = document.getElementById("esLanguage");
+
+      english?.addEventListener("click", (event) => {
+        console.log("english ", event.target.innerText);
+        console.log("english ", event.target.lang);
+        const lang = event.target.lang;
+        changeLanguage(lang);
+      });
+
+      spanish?.addEventListener("click", (event) => {
+        console.log("spanish ", event.target.innerText);
+        console.log("spanish ", event.target.lang);
+        const lang = event.target.lang;
+        changeLanguage(lang);
+      });
+
+      function setLanguagePreference(lang) {
+        localStorage.setItem("language", lang);
+        location.reload();
+      }
+
+      async function fetchLanguageData(lang) {
+        console.log(lang);
+        // const response = await import(`./../../cv-${lang}.json`);
+        const { default: jsonData } = await import(`./../../cv-${lang}.json`, {
+          assert: { type: "json" },
+        });
+        console.log(jsonData);
+        return jsonData.json();
+      }
+
+      async function changeLanguage(lang) {
+        await setLanguagePreference(lang);
+
+        const langData = await fetchLanguageData(lang);
+        console.log(langData);
+      }
+    </script>
+
+    <style is:global>
+      html {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          "Courier New",
+          Courier,
+          monospace;
+        /* background: #fff; */
+        letter-spacing: -0.025rem;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+      }
+
+      body,
+      figure {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing:;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+      }
+
+      p {
+        /* color: #666; */
+        color: var(--color-text);
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0;
+        text-wrap: pretty;
+      }
+
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+      }
+
+      .print {
+        display: none !important;
+      }
+
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+
+        .print {
+          display: block !important;
+        }
+
+        astro-dev-toolbar {
+          display: none !important;
+        }
+
+        article {
+          break-inside: avoid;
+        }
+      }
+      :root {
+        --color-bg: #f2f2f2;
+        --color-text: #444444;
+        --bold-text: #222;
+        --nav-text: #000000;
+        --code: #f2f2f2;
+        --block-quote-border: #999;
+        --block-quote-text: #222;
+        --slider-bg: #dddddd;
+        --slider-bg-before: #fff;
+        --slider-input-bg: #8758ff;
+      }
+
+      [data-theme="light"] {
+        --color-bg: #f2f2f2;
+        --color-text: #444444;
+        --bold-text: #222;
+        --nav-text: #000000;
+        --code: #f2f2f2;
+        --block-quote-border: #999;
+        --block-quote-text: #222;
+        --slider-bg: #dddddd;
+        --slider-bg-before: #fff;
+        --slider-input-bg: #8758ff;
+      }
+
+      [data-theme="dark"] {
+        --color-bg: #000;
+        --color-text: #dddddd;
+        --bold-text: #eeeeee;
+        --nav-text: #dddddd;
+        --code: #f2f2f2;
+        --block-quote-border: #8e32dc;
+        --block-quote-text: #dddddd;
+      }
+
+      nav {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        padding: 0.5rem 1rem 0 0;
+        margin: 0.5rem 1rem 0 0;
+      }
+
+      nav ul {
+        display: flex;
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      nav ul li {
+        margin: 0.1rem;
+        padding: 0.1rem;
+      }
+    </style>
   </body>
 </html>
-<style is:global>
-  html {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      "Courier New",
-      Courier,
-      monospace;
-    background: #fff;
-    letter-spacing: -0.025rem;
-  }
-
-  body,
-  figure {
-    margin: 0;
-    padding: 0;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing:;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    margin: 0;
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-  }
-
-  p {
-    color: #888;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    margin: 0;
-    text-wrap: pretty;
-  }
-</style>

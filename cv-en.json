@@ -1,0 +1,212 @@
+{
+  "basics": {
+    "name": "Gabriel Pérez Moreno",
+    "label": "System engineer with more than six years of experience in back-end and front-end development.",
+    "image": "/me.webp",
+    "email": "gabriel06241@gmail.com",
+    "phone": "(314) 615-1101",
+    "url": "https://gabriel06241.com",
+    "summary": "+6 years of experience as backend and frontend developer using scrum and kanban methodologies, the frameworks NestJS for back-end and ReactJS library for front-end, as well as database management (SQL and NoSQL), He consider himself to be accountable, proactive, and eager to learn new things every day. He is always looking for ways to advance professionally and personally. He will never, ever give up.",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "Cali",
+      "countryCode": "CO",
+      "region": "Valle del Cauca"
+    },
+    "profiles": [{
+      "network": "X",
+      "username": "Gabriel",
+      "url": "https://x.com/GabrielPM06241"
+    },
+    {
+      "network": "GitHub",
+      "username": "Gabriel",
+      "url": "https://github.com/Gabriel06241"
+    },
+    {
+      "network": "LinkedIn",
+      "username": "Gabriel",
+      "url": "https://www.linkedin.com/in/gabriel06241/"
+    }]
+  },
+  "work": [
+    {
+    "name": "Globant",
+    "position": "Senior BackEnd Engineer (Node JS)",
+    "url": "https://globant.com",
+    "startDate": "2022-10-19",
+    "endDate": null,
+    "summary": "Contribute to the advancement of electronic invoicing integration for ecommerce and payment processing.",
+    "highlights": [
+      "Started the company",
+      "Started the company"
+    ]
+  },
+    {
+    "name": "CHIPER SAS",
+    "position": "Backend Developer",
+    "url": "https://chiper.co",
+    "startDate": "2019-12-09",
+    "endDate": "2022-10-18",
+    "summary": "Contribute to the advancement of electronic invoicing integration for ecommerce and payment processing.",
+    "highlights": [
+      "Started the company",
+      "Started the company"
+    ]
+  },
+  {
+    "name": "GRUPO AFL SAS",
+    "position": "Web interface developer",
+    "url": "https://csstudio.co/",
+    "startDate": "2019-05-06",
+    "endDate": "2019-11-30",
+    "summary": "Contribute to the development of frontend functionalities for the company system built in JavaScript React-JS with ES6.",
+    "highlights": [
+      "Started the company"
+    ]
+  
+  },
+  {
+    "name": "VOV SOLUTIONS SAS",
+    "position": "Web developer (BackEnd)",
+    "url": "https://www.vov.com.co/",
+    "startDate": "2017-03-22",
+    "endDate": "2019-05-17",
+    "summary": "Developing features for the major company's systems CMMS, CRM, EAM, and PHP-based applications using the Postgres SQL database.",
+    "highlights": [
+      "Started the company"
+    ]
+  },
+  {
+    "name": "ADSUM SAS",
+    "position": "Php developer",
+    "url": "https://adsuminternational.com/",
+    "startDate": "2015-06-22",
+    "endDate": "2017-02-17",
+    "summary": "Developing features for the major company's systems CMMS, CRM, EAM, and PHP-based applications using the Postgres SQL database.",
+    "highlights": [
+      "Started the company"
+    ]
+  },
+  {
+    "name": "SERVITEM LTDA",
+    "position": "Internship, developer, and system support",
+    "url": "#",
+    "startDate": "2014-08-22",
+    "endDate": "2015-06-17",
+    "summary": "Developer of the company's website, as well as support features for a functioning system and database management in (PHP and MYSQL).",
+    "highlights": [
+      "Started the company"
+    ]
+  }
+],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "University",
+    "url": "https://institution.com/",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [{
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/",
+    "isActive": true,
+    "github":""
+  },
+  {
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/",
+    "isActive": false,
+    "github":""
+  }]
+}

@@ -1,0 +1,394 @@
+{
+  "basics": {
+    "name": "Gabriel Pérez Moreno",
+    "label": "Ingeniero de sistemas con más de seis años de experiencia en desarrollo back-end y front-end.",
+    "image": "/me.webp",
+    "email": "gabriel06241@gmail.com",
+    "phone": "(314) 615-1101",
+    "url": "https://gabriel06241.com",
+    "summary": "+6 años de experiencia como desarrollador backend y frontend utilizando Javascript, NodeJS,  NestJS framework y la librería ReactJS. Trabajando con metodologías agiles scrum y kanban, así como manejo de bases de datos (SQL y NoSQL). Se considera responsable, proactivo y con ganas de aprender cosas nuevas cada día para constantemente crecer tanto personal como profesionalmente. Él no se va a rendir.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Cali",
+      "countryCode": "CO",
+      "region": "Valle del Cauca"
+    },
+    "profiles": [
+      {
+        "network": "X",
+        "username": "Gabriel",
+        "url": "https://x.com/GabrielPM06241"
+      },
+      {
+        "network": "GitHub",
+        "username": "Gabriel",
+        "url": "https://github.com/Gabriel06241"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Gabriel",
+        "url": "https://www.linkedin.com/in/gabriel06241/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Globant",
+      "position": "Ingeniero de Desarrollo Backend (Node JS)",
+      "url": "https://globant.com",
+      "startDate": "2022-10-19",
+      "endDate": null,
+      "summary": "He liderado integraciónes APIs de proveedores claves para potenciar la gestión de presupuestos publicitarios, además de crear una capa común para lambdas en AWS y asegurar la implementación de servicios como Parameter Store y Secret Manager, fortaleciendo la seguridad de los datos. Mis aportes incluyen el manejo ágil de desafíos y la presentación demo de las tareas de cada sprint y su documentación.",
+      "highlights": []
+    },
+    {
+      "name": "Chiper",
+      "position": "Desarrollador Backend",
+      "url": "https://chiper.co",
+      "startDate": "2019-12-09",
+      "endDate": "2022-10-18",
+      "summary": "Contribui al desarrollo de la integración e implementación de la facturación electrónica para cada venta del comercio electrónico e igualmente se contribuyó al desarrollo para el procesamiento de pagos con distintas plataformas y herramientas.",
+      "highlights": []
+    },
+    {
+      "name": "Grupo AFL",
+      "position": "Desarrollador de interfaces web",
+      "url": "https://csstudio.co/",
+      "startDate": "2019-05-06",
+      "endDate": "2019-11-30",
+      "summary": "Desarrollé funcionalidades frontend para el sistema de control interno de la compañía, utilizando ReactJS y NodeJS, siguiendo estándares ES6. Utilicé GIT para el control de versiones, una base de datos MYSQL y Express JS para la creación de endpoints.",
+      "highlights": []
+    },
+    {
+      "name": "Vov solutions",
+      "position": "Desarrollador Web (Backend)",
+      "url": "https://www.vov.com.co/",
+      "startDate": "2017-03-22",
+      "endDate": "2019-05-17",
+      "summary": "Desarrollé funcionalidades backend para el sistema ERP de la compañía utilizando JavaScript, NodeJS y estándares ES5 y ES6. Integré bases de datos MYSQL y MongoDB, junto con Pug (Jade) para manejo de plantillas y ExpressJS para crear nuevos endpoints.",
+      "highlights": []
+    },
+    {
+      "name": "Adsum",
+      "position": "Desarrollador PHP",
+      "url": "https://adsuminternational.com/",
+      "startDate": "2015-06-22",
+      "endDate": "2017-02-17",
+      "summary": "Desarrollé nuevas características para los sistemas de tipo CMMS, CRM y EAM de la compañia construidos en PHP y conectados a una base de datos PostgreSQL, utilizando HTML, CSS, jQuery y AJAX para abordar las necesidades específicas de nuestros clientes.",
+      "highlights": []
+    },
+    {
+      "name": "Servitem ltda",
+      "position": "Desarrollador Web - Practicante",
+      "url": "#",
+      "startDate": "2014-01-20",
+      "endDate": "2015-06-17",
+      "summary": "Contribui a los sistemas de información de la empresa, trabajando con PHP y bases de datos MYSQL, brindando soporte técnico a las oficinas. Durante mi práctica, desarrollé el sitio web corporativo y gestioné el hosting, además de participar en un proyecto de seguridad informática.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Institución Universitaria Antonio Jose Camacho - UNIAJC",
+      "url": "https://www.uniajc.edu.co/",
+      "area": "Ingeniero de Sistemas",
+      "studyType": "Profesional",
+      "startDate": "2016-01-02",
+      "endDate": "2019-12-07",
+      "score": "4.0",
+      "courses": []
+    },
+    {
+      "institution": "Servicio Nacional de Aprendizaje - SENA",
+      "url": "https://oferta.senasofiaplus.edu.co/sofia-oferta/",
+      "area": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
+      "studyType": "Tecnológico",
+      "startDate": "2016-01-02",
+      "endDate": "2019-12-07",
+      "score": "4.0",
+      "courses": []
+    },
+    {
+      "institution": "Servicio Nacional de Aprendizaje - SENA",
+      "url": "https://oferta.senasofiaplus.edu.co/sofia-oferta/",
+      "area": "Técnico en Computacion",
+      "studyType": "Técnico",
+      "startDate": "2012-01-02",
+      "endDate": "2014-12-07",
+      "score": "4.0",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Mongodb",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "NestJS",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "NPM",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Jest",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Julian Salamanca",
+      "reference": "Gerente de Proyecto en Lean Tech",
+      "mail": "pjulian.sb@gmail.com"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Portafolio",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Résumé minimalista maquetado para web y pdf",
+      "highlights": [
+        "Résumé",
+        "Astro",
+        "JSON"
+      ],
+      "url": "",
+      "isActive": true,
+      "github": "https://github.com/Gabriel06241/minimalist-portfolio-json"
+    },
+    {
+      "name": "Barber",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Aplicación web React/Firebase para gestionar las ventas y servicios de peluqueria desde una tienda.",
+      "highlights": [
+        "ReactJS",
+        "Firebase"
+      ],
+      "url": "https://project.com/",
+      "isActive": false,
+      "github": "https://github.com/Gabriel06241/perez-barber-shop/tree/master"
+    },
+    {
+      "name": "Invie",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Sitio web inviesibles las guitarras más locas, Sé la estrella de rock que siempre quisiste ser.",
+      "highlights": [
+        "Guitarra",
+        "Rockstar"
+      ],
+      "url": "https://gabriel06241.github.io/invie-platzi-course/",
+      "isActive": false,
+      "github": "https://github.com/Gabriel06241/invie-platzi-course?tab=readme-ov-file"
+    },
+    {
+      "name": "Bingo",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Tarjeta para facilitar el juego del bingo familiar.",
+      "highlights": [
+        "html",
+        "css",
+        "javascript"
+      ],
+      "url": "https://gabriel06241.github.io/test.github.io/",
+      "isActive": false,
+      "github": "https://github.com/Gabriel06241/test.github.io"
+    },
+    {
+      "name": "Simon",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Simón dice es un juego que te indicará qué teclas debes tocar, debes memorizarlas y hacer todo lo que Simón dice.",
+      "highlights": [
+        "Memoria",
+        "Juego",
+        "Teclado"
+      ],
+      "url": "https://project.com/",
+      "isActive": false,
+      "github": "https://github.com/Gabriel06241/simon-dice"
+    },
+    {
+      "name": "Platzom",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Proyecto del curso de Javascript, Es un modulo que traduce palabras a un idioma inventado.",
+      "highlights": [
+        "Idioma",
+        "Platzi"
+      ],
+      "url": "https://project.com/",
+      "isActive": false,
+      "github": "https://github.com/Gabriel06241/platzom/tree/master"
+    }
+  ]
+}
