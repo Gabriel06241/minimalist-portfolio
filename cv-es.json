@@ -2,7 +2,7 @@
   "basics": {
     "name": "Gabriel Pérez Moreno",
     "label": "Ingeniero de sistemas con más de seis años de experiencia en desarrollo back-end y front-end.",
-    "image": "/me.webp",
+    "image": "./me.webp",
     "email": "gabriel06241@gmail.com",
     "phone": "(314) 615-1101",
     "url": "https://gabriel06241.com",
