@@ -1,7 +1,8 @@
 {
   "name": "minimalist-portfolio-json",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "packageManager": "^pnpm@8.15.7",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -14,6 +15,5 @@
     "astro": "^4.2.8",
     "ninja-keys": "^1.2.2",
     "typescript": "^5.3.3"
-  },
-  "packageManager": "^pnpm@8.15.7"
+  }
 }
