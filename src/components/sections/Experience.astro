@@ -56,11 +56,13 @@ import { work } from "@cv";
 
   article h3 {
     font-weight: 500;
-    color: #111;
+    /* color: #111; */
+    color: var(--color-text-3);
   }
 
   article a {
-    color: #111;
+    /* color: #111; */
+    color: var(--color-text-2);
   }
 
   article a:hover {
@@ -68,7 +70,8 @@ import { work } from "@cv";
   }
 
   article h4 {
-    color: #333;
+    /* color: #333; */
+    color: var(--color-text-4);
     font-weight: 500;
   }
 
@@ -80,7 +83,8 @@ import { work } from "@cv";
   }
 
   time {
-    color: #555;
+    /* color: #555; */
+    color: var(--color-text-6);
     font-size: 0.85rem;
     min-width: 102px;
     cursor: default;
@@ -123,6 +127,12 @@ import { work } from "@cv";
   @media (width <= 700px) {
     time {
       text-align: right;
+    }
+  }
+
+  @media print {
+    p {
+      color: var(--color-text-6) !important;
     }
   }
 </style>
