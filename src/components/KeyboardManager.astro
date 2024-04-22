@@ -195,8 +195,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
   }
 
   footer {
-    background: #fdfdfd;
-    border-top: 1px solid #eee;
+    /* background: #fdfdfd; */
+    background: var(--color-bg);
+    /* border-top: 1px solid #4441; */
+    border-top: 1px solid var(--color-bg-kbd);
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -214,7 +216,8 @@ const profilesInfo = profiles.map(({ network, url }) => {
   }
 
   kbd {
-    background: #eee;
+    /* background: #eee; */
+    background: var(--color-bg-kbd);
     border-radius: 4px;
     padding: 2px 4px;
     font-size: 12px;

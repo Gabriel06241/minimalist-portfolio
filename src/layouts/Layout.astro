@@ -4,7 +4,7 @@ interface Props {
 }
 
 import { ViewTransitions } from "astro:transitions";
-// import Toggle from "@/components/ThemeChange.astro";
+import Toggle from "@/components/ThemeChange.astro";
 
 import { basics } from "@cv";
 
@@ -37,17 +37,17 @@ const { image, summary, url } = basics;
     <meta name="twitter:image" content="" />
   </head>
   <body>
-    <!-- <nav>
+    <nav class="no-print">
       <ul>
         <li id="enLanguage">
-          <a href="/#en" lang="en">Ingles</a>
+          <a href="#en" lang="en">Ingles</a>
         </li>
         <li id="esLanguage">
-          <a href="/#es" lang="es">Español</a>
+          <a href="#es" lang="es">Español</a>
         </li>
       </ul>
       <Toggle />
-    </nav> -->
+    </nav>
     <slot />
     <script is:inline>
       const english = document.getElementById("enLanguage");
@@ -69,7 +69,7 @@ const { image, summary, url } = basics;
 
       function setLanguagePreference(lang) {
         localStorage.setItem("language", lang);
-        location.reload();
+        // location.reload();
       }
 
       async function fetchLanguageData(lang) {
@@ -79,7 +79,7 @@ const { image, summary, url } = basics;
           assert: { type: "json" },
         });
         console.log(jsonData);
-        return jsonData.json();
+        return jsonData;
       }
 
       async function changeLanguage(lang) {
@@ -101,7 +101,7 @@ const { image, summary, url } = basics;
           monospace;
         /* background: #fff; */
         letter-spacing: -0.025rem;
-        color: var(--color-text);
+        color: var(--color-text-2);
         background-color: var(--color-bg);
       }
 
@@ -148,17 +148,11 @@ const { image, summary, url } = basics;
 
       p {
         /* color: #666; */
-        color: var(--color-text);
+        color: var(--color-text-2);
         font-size: 0.9rem;
         line-height: 1.5;
         margin: 0;
         text-wrap: pretty;
-      }
-
-      @media print {
-        .no-print {
-          display: none !important;
-        }
       }
 
       .print {
@@ -179,14 +173,23 @@ const { image, summary, url } = basics;
         }
 
         article {
+          color: #222 !important;
           break-inside: avoid;
+        }
+
+        p {
+          color: var(--color-text-6) !important;
         }
       }
       :root {
         --color-bg: #f2f2f2;
-        --color-text: #444444;
-        --bold-text: #222;
-        --nav-text: #000000;
+        --color-bg-kbd: #4441;
+        --color-text-6: #666;
+        --color-text-4: #444;
+        --color-text-3: #333;
+        --color-text-2: #222;
+        --color-text-0: #000;
+        --nav-text: #000;
         --code: #f2f2f2;
         --block-quote-border: #999;
         --block-quote-text: #222;
@@ -197,9 +200,13 @@ const { image, summary, url } = basics;
 
       [data-theme="light"] {
         --color-bg: #f2f2f2;
-        --color-text: #444444;
-        --bold-text: #222;
-        --nav-text: #000000;
+        --color-bg-kbd: #4441;
+        --color-text-6: #666;
+        --color-text-4: #444;
+        --color-text-3: #333;
+        --color-text-2: #222;
+        --color-text-0: #000;
+        --nav-text: #000;
         --code: #f2f2f2;
         --block-quote-border: #999;
         --block-quote-text: #222;
@@ -209,10 +216,14 @@ const { image, summary, url } = basics;
       }
 
       [data-theme="dark"] {
-        --color-bg: #000;
-        --color-text: #dddddd;
-        --bold-text: #eeeeee;
-        --nav-text: #dddddd;
+        --color-bg: #111;
+        --color-bg-kbd: #222;
+        --color-text-0: #fff;
+        --color-text-2: #eee;
+        --color-text-3: #ddd;
+        --color-text-4: #ccc;
+        --color-text-6: #bbb;
+        --nav-text: #aaa;
         --code: #f2f2f2;
         --block-quote-border: #8e32dc;
         --block-quote-text: #dddddd;

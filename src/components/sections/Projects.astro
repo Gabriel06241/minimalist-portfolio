@@ -77,7 +77,8 @@ import { projects } from "@cv";
   }
 
   article a {
-    color: #111;
+    /* color: #111; */
+    color: var(--color-text-3);
   }
 
   article a:hover {
@@ -144,6 +145,7 @@ import { projects } from "@cv";
 
   @media print {
     article h3 span {
+      color: #222 !important;
       animation-name: none;
     }
   }
