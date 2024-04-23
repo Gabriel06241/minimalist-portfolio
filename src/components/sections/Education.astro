@@ -7,36 +7,40 @@ import { education } from "@cv";
 <Section title="Educación">
   <ul>
     {
-      education.map(({ institution, area, studyType, startDate, endDate }) => {
-        const startYear = new Date(startDate).getFullYear();
-        const endYear =
-          endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+      education.map(
+        ({ institution, area, studyType, modality, startDate, endDate }) => {
+          const startYear = new Date(startDate).getFullYear();
+          const endYear =
+            endDate !== null ? new Date(endDate).getFullYear() : "Actual";
 
-        return (
-          <li>
-            <article>
-              <header>
-                <div>
-                  <h3>{institution}</h3>
-                  <h4>{studyType}</h4>
-                </div>
-                <div>
-                  <time datetime={startDate} data-title={startDate}>
-                    {startYear}
-                  </time>
-                  {" - "}
-                  <time datetime={endDate} data-title={endDate}>
-                    {endYear}
-                  </time>
-                </div>
-              </header>
-              <footer>
-                <p>{area}</p>
-              </footer>
-            </article>
-          </li>
-        );
-      })
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>{institution}</h3>
+                    <h4>
+                      {studyType} - {modality}
+                    </h4>
+                  </div>
+                  <div>
+                    <time datetime={startDate} data-title={startDate}>
+                      {startYear}
+                    </time>
+                    {" - "}
+                    <time datetime={endDate} data-title={endDate}>
+                      {endYear}
+                    </time>
+                  </div>
+                </header>
+                <footer>
+                  <p>{area}</p>
+                </footer>
+              </article>
+            </li>
+          );
+        }
+      )
     }
   </ul>
 </Section>
@@ -50,13 +54,11 @@ import { education } from "@cv";
 
   article h3 {
     font-weight: 500;
-    /* color: #111; */
     color: var(--color-text-3);
   }
 
   article h4 {
     font-weight: 400;
-    /* color: #222; */
     color: var(--color-text-4);
   }
 
@@ -68,7 +70,6 @@ import { education } from "@cv";
   }
 
   time {
-    /* color: #555; */
     color: var(--color-text-6);
     font-size: 0.85rem;
     min-width: 102px;

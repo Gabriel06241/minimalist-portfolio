@@ -6,7 +6,7 @@
     "email": "gabriel06241@gmail.com",
     "phone": "(314) 615-1101",
     "url": "https://gabriel06241.com",
-    "summary": "Con más de 6 años de experiencia en desarrollo backend y frontend, se destaca por su responsabilidad, proactividad, entusiasmo y su dedicación para aprender y crecer continuamente. Utiliza JavaScript, NodeJS y el framework NestJS, junto con la librería ReactJS, para crear soluciones con calidad. Su compromiso con las metodologías ágiles, como Scrum y Kanban, garantiza una entrega eficiente y de buena calidad. Además, tiene buena experiencia en el manejo de bases de datos SQL y NoSQL. Su determinación y perseverancia lo impulsan a enfrentar desafíos con confianza, mientras se esfuerza por crecer tanto personal como profesionalmente cada día. Su firme compromiso con el éxito lo convierte en un activo valioso para cualquier equipo.",
+    "summary": "Con más de 6 años de experiencia en desarrollo backend y frontend, me destaco por mi responsabilidad, proactividad, entusiasmo y dedicación para aprender y crecer continuamente. Utilizo JavaScript, NodeJS y el framework NestJS, junto con la librería ReactJS, para crear soluciones con calidad. Mi compromiso con las metodologías ágiles, como Scrum y Kanban, garantiza una entrega eficiente y de buena calidad. Además, tengo buena experiencia en el manejo de bases de datos SQL y NoSQL. Mi determinación y perseverancia me impulsan a enfrentar desafíos con confianza, mientras me esfuerzo por crecer tanto personal como profesionalmente cada día. Mi firme compromiso con el éxito me convierte en un activo valioso para cualquier equipo.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -103,10 +103,33 @@
   ],
   "education": [
     {
+      "institution": "Fundación Escuela Tecnológica de Neiva - FET",
+      "url": "https://www.fet.edu.co/",
+      "area": "Diplomado en Docencia Universitaria",
+      "studyType": "Diplomado",
+      "modality": "Virtual",
+      "startDate": "2023-11-20",
+      "endDate": "2023-12-10",
+      "score": "4.0",
+      "courses": []
+    },
+    {
+      "institution": "Institución Universitaria Antonio Jose Camacho - UNIAJC",
+      "url": "https://www.uniajc.edu.co/",
+      "area": "Diplomado de Business Intelligence and Big Data",
+      "studyType": "Diplomado",
+      "modality": "Virtual",
+      "startDate": "2021-08-01",
+      "endDate": "2021-09-27",
+      "score": "4.0",
+      "courses": []
+    },
+    {
       "institution": "Institución Universitaria Antonio Jose Camacho - UNIAJC",
       "url": "https://www.uniajc.edu.co/",
       "area": "Ingeniero de Sistemas",
       "studyType": "Profesional",
+      "modality": "Presencial",
       "startDate": "2016-01-02",
       "endDate": "2019-12-07",
       "score": "4.0",
@@ -117,6 +140,7 @@
       "url": "https://oferta.senasofiaplus.edu.co/sofia-oferta/",
       "area": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
       "studyType": "Tecnológico",
+      "modality": "Presencial",
       "startDate": "2016-01-02",
       "endDate": "2019-12-07",
       "score": "4.0",
@@ -127,6 +151,7 @@
       "url": "https://oferta.senasofiaplus.edu.co/sofia-oferta/",
       "area": "Técnico en Computacion",
       "studyType": "Técnico",
+      "modality": "Presencial",
       "startDate": "2012-01-02",
       "endDate": "2014-12-07",
       "score": "4.0",

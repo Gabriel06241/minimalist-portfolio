@@ -60,7 +60,7 @@ import { projects } from "@cv";
 
   article {
     border-radius: 8px;
-    border: 1px solid #4441;
+    border: 1px solid #4446;
     gap: 16px;
     display: flex;
     flex-direction: column;
@@ -77,7 +77,6 @@ import { projects } from "@cv";
   }
 
   article a {
-    /* color: #111; */
     color: var(--color-text-3);
   }
 
@@ -138,14 +137,26 @@ import { projects } from "@cv";
 
     article {
       border: none;
-      box-shadow: 0 1px 1px #f2f2f2;
-      padding: 0 0 16px 0;
+      border: 1px solid #4446;
+      padding: 16px;
+      gap: 16px;
     }
   }
 
   @media print {
+    article {
+      border: none;
+      padding: 16px;
+      gap: 16px;
+    }
+
+    article p {
+      color: black !important;
+    }
+
     article h3 span {
-      color: #222 !important;
+      /* color: var(--color-text-3); */
+      /* color: black !important; */
       animation-name: none;
     }
   }
