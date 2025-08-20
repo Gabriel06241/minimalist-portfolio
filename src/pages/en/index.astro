@@ -1,0 +1,46 @@
+---
+import KeyboardManager from "@/components/KeyboardManager.astro";
+import About from "@/components/sections/About.astro";
+import Education from "@/components/sections/Education.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Hero from "@/components/sections/Hero.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+import Layout from "@/layouts/Layout.astro";
+import cv from "../../../cv-en.json";
+
+const { basics, work, education, skills, projects } = cv;
+---
+
+<Layout title={`Resume - ${basics.name}`}>
+  <main>
+    <Hero basics={basics} />
+    <About title="About" summary={basics.summary} />
+    <Experience title="Experience" work={work} />
+    <Education title="Education" education={education} />
+    <Projects title="Projects" projects={projects} />
+    <Skills title="Skills" skills={skills} />
+  </main>
+  <KeyboardManager profiles={basics.profiles} />
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    /* width: 100%; */
+  }
+
+  @media print {
+    main {
+      color: var(--color-text-1);
+      padding: 3rem;
+    }
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>

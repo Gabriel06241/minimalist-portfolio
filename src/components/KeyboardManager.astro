@@ -1,7 +1,11 @@
 ---
-import { basics } from "@cv";
+import type { Profile } from "@/cv";
 
-const { profiles } = basics;
+interface Props {
+  profiles: Profile[];
+}
+
+const { profiles } = Astro.props;
 
 const SOCIAL_ICONS: Record<string, string> = {
   GitHub: `<svg

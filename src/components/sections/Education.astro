@@ -1,10 +1,16 @@
 ---
 import Section from "@/components/Section.astro";
+import type { Education } from "@/cv";
 
-import { education } from "@cv";
+interface Props {
+  title: string;
+  education: Education[];
+}
+
+const { title, education } = Astro.props;
 ---
 
-<Section title="Educación">
+<Section {title}>
   <ul>
     {
       education.map(
@@ -19,18 +25,24 @@ import { education } from "@cv";
                 <header>
                   <div>
                     <h3>{institution}</h3>
-                    <h4>
-                      {studyType} - {modality}
-                    </h4>
+                    {studyType && modality && (
+                      <h4>
+                        {studyType} - {modality}
+                      </h4>
+                    )}
                   </div>
                   <div>
                     <time datetime={startDate} data-title={startDate}>
                       {startYear}
                     </time>
-                    {" - "}
-                    <time datetime={endDate} data-title={endDate}>
-                      {endYear}
-                    </time>
+                    {endDate && (
+                      <>
+                        {" - "}
+                        <time datetime={endDate} data-title={endDate}>
+                          {endYear}
+                        </time>
+                      </>
+                    )}
                   </div>
                 </header>
                 <footer>

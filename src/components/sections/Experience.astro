@@ -1,10 +1,16 @@
 ---
 import Section from "../Section.astro";
+import type { Work } from "@/cv";
 
-import { work } from "@cv";
+interface Props {
+  title: string;
+  work: Work[];
+}
+
+const { title, work } = Astro.props;
 ---
 
-<Section title="Experiencia laboral">
+<Section {title}>
   <ul>
     {
       work.map(({ name, startDate, endDate, position, summary, url }) => {
@@ -29,10 +35,14 @@ import { work } from "@cv";
                   <time datetime={startDate} data-title={startDate}>
                     {startYear}
                   </time>
-                  {" - "}
-                  <time datetime={endDate} data-title={endDate}>
-                    {endYear}
-                  </time>
+                  {endDate && (
+                    <>
+                      {" - "}
+                      <time datetime={endDate} data-title={endDate}>
+                        {endYear}
+                      </time>
+                    </>
+                  )}
                 </div>
               </header>
 
