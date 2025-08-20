@@ -5,6 +5,8 @@ export default defineConfig({
     root: './',
     output: 'static',
     outDir: './docs',
+    site: 'https://gabriel06241.github.io',
+    base: '/minimalist-portfolio',
     build: {
       assets: 'astro'
     },
