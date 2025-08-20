@@ -1,145 +1,126 @@
 export interface CV {
-    basics: Basics
-    work: Array<Work>
-    volunteer: Array<Volunteer>
-    education: Array<Education>
-    awards: Array<Awards>
-    certificates: Array<Certificates>
-    publications: Array<Publications>
-    skills: Array<Skills>
-    languages: Array<Languages>
-    interests: Array<Interests>
-    references: Array<References>
-    projects: Array<Projects>
-  }
-  
-  interface Basics {
-    name: string
-    label: string
-    image: string
-    email: string
-    phone: string
-    url: string
-    summary: string
-    location: Location
-    profiles: Array<Profiles>
-  }
-  
-  interface Location {
-    address: string
-    postalCode: string
-    city: string
-    countryCode: string
-    region: string
-  }
-  
-  interface Profiles {
-    network: string
-    username: string
-    url: string
-  }
-  
-  interface Work {
-    name: string
-    position: string
-    url: string
-    startDate: DateStr
-    endDate: DateStr | null
-    summary: string
-    highlights: Highlight
-  }
-  
-  type DateStr = `${string}-${string}-${string}`
-  
-  interface Volunteer {
-    organization: string
-    position: string
-    url: string
-    startDate: DateStr
-    endDate: DateStr
-    summary: string
-    highlights: Highlight
-  }
-  
-  interface Skills {
-    name: string
-    level: string
-    keywords: Array<string>
-  }
-  
-  interface Awards {
-    title: string
-    date: string
-    awarder: string
-    summary: string
-  }
-  
-  interface Certificates {
-    name: string,
-    date: DateStr,
-    issuer: string,
-    url: string
-  }
-  
-  interface Publications {
-    name: string
-    publisher: string
-    releaseDate: DateStr
-    url: string
-    summary: string
-  }
-  
-  interface Education {
-    institution: string
-    url: string
-    area: string
-    studyType: string
-    startDate: DateStr
-    endDate: DateStr
-    score: string
-    courses: Array<string>
-  }
-  
-  interface Languages {
-    language: Language
-    fluency: string
-  }
-  
-  type Language =
-    "Spanish"
-    | "English"
-    | "German"
-    | "France"
-    | "Italian"
-    | "Korean"
-    | "Portuguese"
-    | "Chinese"
-    | "Arabic"
-    | "Dutch"
-    | "Finnish"
-    | "Russian"
-    | "Turkish"
-    | "Hindi"
-    | "Bengali"
-    | string
-  
-  interface Projects {
-    name: string
-    isActive: boolean
-    description: string
-    highlights: Highlight
-    url: string
-    github?: string
-  }
-  
-  interface Interests {
-    name: string
-    keywords: Array<string>
-  }
-  
-  interface References {
-    name: string
-    reference: string
-  }
-  
-  type Highlight = Array<String>
+    basics: Basics;
+    work: Work[];
+    volunteer: Volunteer[];
+    education: Education[];
+    awards: Award[];
+    certificates: Certificate[];
+    publications: Publication[];
+    skills: Skill[];
+    languages: Language[];
+    interests: Interest[];
+    references: Reference[];
+    projects: Project[];
+}
+
+export interface Basics {
+    name: string;
+    label: string;
+    image: string;
+    email: string;
+    phone: string;
+    url: string;
+    summary: string;
+    location: Location;
+    profiles: Profile[];
+}
+
+export interface Location {
+    address: string;
+    postalCode: string;
+    city: string;
+    countryCode: string;
+    region: string;
+}
+
+export interface Profile {
+    network: string;
+    username: string;
+    url: string;
+}
+
+export interface Work {
+    name: string;
+    position: string;
+    url: string;
+    startDate: string;
+    endDate: string | null;
+    summary: string;
+    highlights: string[];
+}
+
+export interface Volunteer {
+    organization: string;
+    position: string;
+    url: string;
+    startDate: string;
+    endDate: string;
+    summary: string;
+    highlights: string[];
+}
+
+export interface Skill {
+    name: string;
+    level: string;
+    keywords: string[];
+}
+
+export interface Award {
+    title: string;
+    date: string;
+    awarder: string;
+    summary: string;
+}
+
+export interface Certificate {
+    name: string;
+    date: string;
+    issuer: string;
+    url: string;
+}
+
+export interface Publication {
+    name: string;
+    publisher: string;
+    releaseDate: string;
+    url: string;
+    summary: string;
+}
+
+export interface Education {
+    institution: string;
+    url: string;
+    area: string;
+    studyType: string;
+    startDate: string;
+    endDate: string;
+    score: string;
+    courses: string[];
+    modality?: string;
+}
+
+export interface Language {
+    language: string;
+    fluency: string;
+}
+
+export interface Project {
+    name: string;
+    startDate: string;
+    endDate: string;
+    description: string;
+    highlights: string[];
+    url: string;
+    isActive: boolean;
+    github?: string;
+}
+
+export interface Interest {
+    name: string;
+    keywords: string[];
+}
+
+export interface Reference {
+    name: string;
+    reference: string;
+}

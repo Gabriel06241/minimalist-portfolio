@@ -1,7 +1,6 @@
 ---
 import Section from "@/components/Section.astro";
-import { skills } from "@cv";
-
+import type { Skill } from "@/cv";
 import HTML from "@/icons/html.astro";
 import CSS from "@/icons/css.astro";
 import JavaScript from "@/icons/javascript.astro";
@@ -22,6 +21,13 @@ import NestJS from "@/icons/nestjs.astro";
 import Aws from "@/icons/aws.astro";
 import Jest from "@/icons/jest.astro";
 import Npm from "@/icons/npm.astro";
+
+interface Props {
+  title: string;
+  skills: Skill[];
+}
+
+const { title, skills } = Astro.props;
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -47,7 +53,7 @@ const SKILLS_ICONS: Record<string, any> = {
 };
 ---
 
-<Section title="Habilidades">
+<Section {title}>
   <ul>
     {
       skills.map(({ name }) => {
