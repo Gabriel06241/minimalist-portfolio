@@ -6,11 +6,10 @@ interface Props {
 }
 import { ViewTransitions } from "astro:transitions";
 import Toggle from "@/components/ThemeChange.astro";
+import favicon from "@/assets/favicon.svg";
+import me from "@/assets/me.webp";
 
-const {
-  title,
-  description = "Contratame para crear tu aplicación web o móvil. Desarrollo de software a medida, freelance, programador.",
-} = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,14 +20,16 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="image" href="/me.webp" />
+    <link rel="icon" type="image/svg+xml" href={favicon.src} />
+    <link rel="preload" as="image" href={me.src} />
   </head>
   <body>
     <nav class="no-print">
-      <Toggle />
+      <div class="nav-container">
+        <LanguageSwitcher />
+        <Toggle />
+      </div>
     </nav>
-    <LanguageSwitcher />
     <slot />
 
     <style is:global>
@@ -173,11 +174,17 @@ const {
       }
 
       nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        z-index: 100;
+      }
+
+      .nav-container {
         display: flex;
-        position: relative;
-        justify-content: flex-end;
-        padding: 0.5rem 1rem 0 0;
-        margin: 0.5rem 1rem 0 0;
+        align-items: center;
+        gap: 1rem;
       }
 
       nav ul {

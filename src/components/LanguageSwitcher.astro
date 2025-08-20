@@ -1,30 +1,33 @@
 ---
 ---
 <div class="language-switcher">
-    <a href="/en/">English</a>
-    <a href="/es/">Español</a>
+    <a href="/minimalist-portfolio/en/">EN</a>
+    <span>|</span>
+    <a href="/minimalist-portfolio/es/">ES</a>
 </div>
 
 <style>
 .language-switcher {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     background: rgba(255, 255, 255, 0.1);
     padding: 0.5rem;
     border-radius: 0.5rem;
-    z-index: 100;
 }
 .language-switcher a {
-    color: white;
+    color: var(--nav-text);
     text-decoration: none;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     transition: background 0.3s;
+    font-size: 0.9rem;
 }
 .language-switcher a:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+.language-switcher span {
+    color: var(--nav-text);
+    font-size: 0.9rem;
 }
 </style>

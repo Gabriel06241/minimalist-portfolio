@@ -7,6 +7,8 @@ import Phone from "@/icons/Phone.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import X from "@/icons/X.astro";
 import type { Basics } from "@/cv";
+import { Image } from "astro:assets";
+import me from "@/assets/me.webp";
 
 interface Props {
   basics: Basics;
@@ -90,7 +92,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" ● ");
       </footer>
     </div>
     <figure>
-      <img src={image} alt={name} />
+      <Image src={me} alt={name} />
     </figure>
   </div>
 </Section>
