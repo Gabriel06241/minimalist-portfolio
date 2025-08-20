@@ -12,7 +12,7 @@ import cv from "../../../cv-en.json";
 const { basics, work, education, skills, projects } = cv;
 ---
 
-<Layout title={`Resume - ${basics.name}`}>
+<Layout title={`Resume - ${basics.name}`} description={basics.summary}>
   <main>
     <Hero basics={basics} />
     <About title="About" summary={basics.summary} />
